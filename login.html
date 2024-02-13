@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>connected anti-theft device</title>
+        <link rel="stylesheet" href="css/login-style.css">
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="logotrans">
+                <a href="index.html" class="logo">VigilanceGuard</a>
+                <img src="logo.png" alt="logo">
+            </div>
+
+            <nav class="navabar">
+                
+                <a href="language.html">Language</a>
+
+            </nav>
+
+            
+
+        </header>
+        <div class="container">
+            <h2 id="formTitle">Login</h2>
+            <form id="loginForm" onsubmit="return validateForm('loginForm')">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+        
+                <button type="submit">Login</button>
+            </form>
+        
+            <form id="registerForm" style="display: none;" onsubmit="return validateForm('registerForm')">
+                <label for="newUsername">New Username:</label>
+                <input type="text" id="newUsername" name="newUsername" required>
+        
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+        
+                <button type="submit">Register</button>
+            </form>
+        
+            <div class="register-link">
+                <p id="toggleFormText">Don't have an account? <a href="javascript:void(0);" id="registerLink">Register here</a></p>
+            </div>
+        </div>
+
+        <script src="js/login-script.js"></script>
+
+    </body>
+
+
+</html>
